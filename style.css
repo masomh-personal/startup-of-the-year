@@ -1,0 +1,61 @@
+body,
+html {
+  /* it's always good to set HTML/body to width/height of 100% */
+  width: 100%;
+  height: 100%;
+  font-family: 'Montserrat', sans-serif;
+  background: url(header.jpg) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+h1 {
+  /* text-transform: uppercase; NOT WORKing: Using bootstrap class to upper case it */
+  color: #e2dbdb;
+  font-size: 3rem;
+}
+
+/* Horizontal line recommendation ruleset for assignment */
+hr {
+  margin: 20px auto;
+  color: #f05f44;
+  border: 3px solid #f05f44;
+  max-width: 65px;
+  opacity: 1;
+}
+
+/* Boostrap: we can modify this bootstrap ruleset for btn-primary in our own css */
+.btn {
+  font-weight: 700;
+  border-radius: 300px;
+  text-transform: uppercase; /* or we can use bootstrap class: text-uppercase */
+}
+
+/* Bootstrap: adding on custom rules */
+.btn-primary {
+  color: whitesmoke; /* text color */
+  background-color: #f05f44; /* button color itself with background*/
+  border-color: #f05f44;
+}
+
+.btn-primary:hover {
+  background-color: #ee4b08;
+  border-color: #ee4b08;
+  border-width: 4px; /* cool effect of making button bigger on hover by adding border size */
+}
+
+/* extra cust class to make a button larger */
+.btn-masom-xl {
+  padding: 1rem 2rem;
+}
+
+.buffer {
+  height: 8rem; /* REM over pixels ideally */
+}
+
+/* 
+NOTES
+- REM: rem (short for “root-em”) units dictate an element's font size relative to the size of the root element. By default, most browsers use a font size value of 16px. So, if the root element is 16px, an element with the value 1rem will also equal 16px.
+*/
